@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>effect</title>
+    </head>
+    <style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .item{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .box1{
+        animation-timing-function: ease;
+
+    }
+    .box2{
+        animation-timing-function: ease-in;
+    }
+    .box3{
+        animation-timing-function: ease-in-out;
+    }
+    .box4{
+        animation-timing-function: ease-out;
+    }
+    .box5{
+        animation-timing-function: linear;
+    }
+    @keyframes box {
+       
+       25%{
+        background-color: red;
+        left: 100%;
+       }
+       50%{
+        background-color: green;
+        left: 0%;
+       }
+       75%{
+        background-color: purple;
+        left: 100%;
+       }        
+       100%{
+        background-color: lawngreen;
+        left: 100%;        
+       }
+    }
+    .box{
+       width: 200px;
+       height: 200px;
+       background-color: aqua;
+       position: absolute;
+       animation-name: box;
+       animation-duration: 5s;
+    }
+    </style>
+    <body>
+        <div class="item">
+            <div class="box1 box">ease</div>
+            <div class="box2 box">ease-in</div>
+            <div class="box3 box">ease-in-out</div>
+            <div class="box4 box"> ease-out</div>
+            <div class="box5 box">linear</div>
+       </div>
+
+    </body>
+</html>

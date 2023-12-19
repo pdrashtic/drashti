@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>protfolio</title>
+        <style>
+        .box{
+         height: 100vh;   
+         width: 100%;
+         display: flex;
+         justify-content: left;
+         align-items:top;
+         background-color: teal;
+    }
+    .boxitem{
+         height: 200px;
+         width: 200px;  
+         border-radius:50px;
+         border: 15px solid rgb(171, 157, 157);
+         border-top: 15px solid darkblue;
+         animation-name:box ;
+         /*animation-iteration-count: infinite;*/
+         animation-duration: .5s;
+        }
+        @keyframes box{
+            0%{
+                transform: rotate(0deg);
+            }
+           
+            100%{
+                transform: rotate(360deg);
+
+            }
+            
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="boxitem">
+                <img src="img/WhatsApp Image 2023-09-28 at 17.38.05.jpg">
+            </div>
+        </div>
+    </body>
+</html>

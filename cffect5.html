@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>effect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Caveat:wght@500&family=Edu+SA+Beginner&family=Gluten&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+    .box{
+         height: 100vh;   
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items:center;
+         background-color: teal;
+    }
+    .boxitem{
+         height: 200px;
+         width: 200px;  
+         border-radius:50px;
+         border: 15px solid rgb(171, 157, 157);
+         border-top: 15px solid darkblue;
+         animation-name:box ;
+         animation-iteration-count: infinite;
+         animation-duration: .5s;
+        }
+        @keyframes box{
+            0%{
+                transform: rotate(0deg);
+            }
+           
+            100%{
+                transform: rotate(360deg);
+
+            }
+            
+        }
+    </style>
+  </head>        
+<body>
+    <div class="box">
+        <div class="boxitem"></div>
+    </div>
+  </body>
+  </html>

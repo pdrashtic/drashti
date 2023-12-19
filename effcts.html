@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>structure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Caveat:wght@500&family=Edu+SA+Beginner&family=Gluten&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+                       
+     <style>
+          *{
+            margin: 0;
+            box-sizing: border-box;
+          }
+          @keyframes flex{
+           0%{
+              background-image: url('img/jsn.webp');
+              left: 0;
+            }
+            25%{
+              background-image: url('img/WhatsApp Image 2023-09-28 at 17.39.55.jpg');
+              left: 70%;
+              top: 0%;
+            }
+            50%{
+             background-image: url('img/WhatsApp Image 2023-09-28 at 17.38.05.jpg');
+             left: 70%;
+             top: 60%;
+            }
+            75%{
+              background-image: url('img/WhatsApp Image 2023-09-06 at 09.56.50.jpg');
+              left: 0;
+              top: 60%;
+            }
+            100%{
+              background-image: url('img/WhatsApp Image 2023-09-06 at 10.02.53.jpg');
+              left: 0;
+              top: 0;
+            }
+            
+        }
+        .flex{
+            display: flex;
+            height: 100%;   
+            width: 100%;
+            position: absolute;
+            background-color: rgba(0, 139, 139, 0.541);            
+            }
+        .flexitem{
+          height: 300px;
+          width: 300px;
+          flex: flex;
+          background-image: url('img/jsn.webp');
+          background-image: url('img/WhatsApp Image 2023-09-28 at 17.39.55.jpg');
+          background-image: url('img/WhatsApp Image 2023-09-28 at 17.38.05.jpg');
+          background-image: url('img/WhatsApp Image 2023-09-06 at 09.56.50.jpg');
+          background-image: url('img/WhatsApp Image 2023-09-06 at 10.02.53.jpg');
+          position: absolute;
+          animation-name: flex;
+          background-size: cover;
+          animation-delay: 2s;
+          animation-duration: 30s;
+          animation-iteration-count: infinite;
+        }
+        </style>
+        </head>
+            <body>
+            <div class="flex">
+              <div class="flexitem"></div>
+              </div>
+               
+            </body>
+</html>

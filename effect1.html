@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>effect</title>
+    </head>
+    <style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    @keyframes box {
+       from{
+        background-color: black;
+       }        
+       to{
+        background-color: red;
+       }
+    }
+    .box{
+       width: 200px;
+       height: 200px;
+       background-color: aqua;
+       animation-name: box;
+       animation-duration: 20s;
+    }
+    @keyframes box1 {
+       from{
+        width: 0;
+        background-color: black;
+       }        
+       to{
+        width: 100;
+        background-color: red;
+       }
+    }
+    .box1{
+       width: 100%;
+       height: 10px;
+       background-color: aqua;
+       animation-name: box1;
+       animation-duration: 20s;
+    }
+    </style>
+    <body>
+        <div class="box"></div>
+        <div class="box1"></div>
+
+    </body>
+</html>
