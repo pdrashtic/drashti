@@ -1,0 +1,17 @@
+.producting{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mainimg{
+    width: 250px;
+    height: 230px;
+    margin: auto;
+}
+.productimglist{
+   display: flex;
+}
+.productimglist img{
+    height: 70px;
+    width: 70px;
+}
